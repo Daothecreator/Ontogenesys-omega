@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+
+  --color-quantum-void: #050505;
+  --color-quantum-cyan: #00f0ff;
+  --color-quantum-magenta: #ff00f0;
+  --color-quantum-gold: #f0c000;
+}
+
+body {
+  background-color: #050505;
+  color: #ffffff;
+}
+
+.glass-panel {
+  border-radius: 1rem;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(24px);
+}
+
+.text-gradient {
+  background: linear-gradient(to right, #00f0ff, #ff00f0, #f0c000);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
