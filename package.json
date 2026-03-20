@@ -1,46 +1,27 @@
 {
-  "name": "delta-omega-resonator",
-  "version": "1.2.0",
+  "name": "генератор-радиочастот",
   "private": true,
-  "description": "∆Ω-RESONATOR — completed Next.js resonator application",
+  "version": "0.0.0",
+  "type": "module",
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "lint": "next lint",
-    "db:generate": "prisma generate",
-    "db:migrate": "prisma migrate dev",
-    "db:studio": "prisma studio",
-    "wasm:build": "bash scripts/build-wasm.sh"
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "lint": "tsc --noEmit"
   },
   "dependencies": {
-    "@auth/prisma-adapter": "^1.0.0",
-    "@prisma/client": "^5.10.0",
-    "@radix-ui/react-slider": "^1.2.2",
-    "@radix-ui/react-slot": "^1.1.2",
-    "bcryptjs": "^2.4.3",
-    "class-variance-authority": "^0.7.0",
-    "clsx": "^2.1.0",
-    "framer-motion": "^11.0.0",
-    "lucide-react": "^0.344.0",
-    "next": "14.2.0",
-    "next-auth": "^4.24.6",
-    "next-themes": "^0.3.0",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "tailwind-merge": "^2.2.1",
-    "tailwindcss-animate": "^1.0.7",
-    "zod": "^3.22.4"
+    "@google/genai": "^1.46.0",
+    "framer-motion": "^12.38.0",
+    "lucide-react": "^0.577.0",
+    "react": "^19.2.3",
+    "react-dom": "^19.2.3"
   },
   "devDependencies": {
-    "@types/bcryptjs": "^2.4.6",
-    "@types/node": "^20.11.0",
-    "@types/react": "^18.2.0",
-    "@types/react-dom": "^18.2.0",
-    "autoprefixer": "^10.4.17",
-    "postcss": "^8.4.35",
-    "prisma": "^5.10.0",
-    "tailwindcss": "^3.4.1",
-    "typescript": "^5.3.3"
+    "@tailwindcss/vite": "^4.2.2",
+    "@types/node": "^22.14.0",
+    "@vitejs/plugin-react": "^5.0.0",
+    "tailwindcss": "^4.2.2",
+    "typescript": "~5.8.2",
+    "vite": "^6.2.0"
   }
 }

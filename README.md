@@ -1,26 +1,20 @@
-# ∆Ω-RESONATOR
+<div align="center">
+<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
+</div>
 
-Готовое приложение на Next.js 14 с App Router, Prisma, NextAuth, UI генератора, CRUD пресетов и клиентским аудио-движком.
+# Run and deploy your AI Studio app
 
-## Что внутри
+This contains everything you need to run your app locally.
 
-- landing / login / register / dashboard
-- credentials auth + optional Google OAuth
-- Prisma schema for users, presets and render jobs
-- API routes for register, health, presets, render
-- рабочий клиентский synth-движок с preview / play / WAV export
-- Tailwind UI с quantum-стилем
+View your app in AI Studio: https://ai.studio/apps/2fe97dc2-45b7-40cb-9874-0bb19b435356
 
-## Быстрый старт
+## Run Locally
 
-```bash
-cp .env.example .env
-npm install
-npm run db:generate
-npm run db:migrate
-npm run dev
-```
+**Prerequisites:**  Node.js
 
-## Что важно
 
-Скрипт `npm run wasm:build` оставлен как заглушка. Приложение уже работает без готового WASM-бинаря: рендер и playback выполняются в браузере через TypeScript engine.
+1. Install dependencies:
+   `npm install`
+2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
+3. Run the app:
+   `npm run dev`
