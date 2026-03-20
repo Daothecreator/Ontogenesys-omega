@@ -1,0 +1,33 @@
+export interface Preset {
+  id: string;
+  userId: string;
+  createdAt: Date;
+  updatedAt: Date;
+  name: string;
+  description: string;
+  isPublic: boolean;
+  isDefault: boolean;
+  carrierHz: number;
+  gammaHz: number;
+  deltaHz: number;
+  thetaHz: number;
+  lowerHz: number;
+  upperHz: number;
+  infralowHz: number;
+  carrierMix: number;
+  harmonicMix: number;
+  harmonicDecay: number;
+  harmonics: number;
+  stereoWidth: number;
+  stereoExpansion: number;
+  headroom: number;
+  modDepth: number;
+  gammaIntensity: number;
+  modulationMult: number;
+  exitCurve: number;
+  durationSec: number;
+  attackPercent: number;
+  releasePercent: number;
+  mode: string;
+  tags: string[];
+}
