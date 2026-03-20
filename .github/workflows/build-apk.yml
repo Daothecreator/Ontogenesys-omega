@@ -34,10 +34,6 @@ jobs:
       - name: Build web assets
         run: npm run build
 
-      - name: Install Capacitor CLI and Android platform
-        run: |
-          npm install @capacitor/core @capacitor/cli @capacitor/android
-
       - name: Initialize Capacitor (if not already configured)
         run: |
           if [ ! -d "android" ]; then
