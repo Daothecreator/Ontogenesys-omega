@@ -5,9 +5,13 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
+    "build": "tsc --noEmit && vite build",
     "preview": "vite preview",
-    "lint": "tsc --noEmit"
+    "lint": "tsc --noEmit",
+    "cap:add:android": "cap add android",
+    "cap:sync": "cap sync",
+    "cap:build:android": "npm run build && cap sync android",
+    "build:apk": "npm run build && cap sync android && cd android && ./gradlew assembleDebug"
   },
   "dependencies": {
     "@google/genai": "^1.46.0",
